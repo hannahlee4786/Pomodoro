@@ -1,0 +1,25 @@
+.header {
+  background-color: rgb(244, 176, 121);
+  color: white;
+  flex-direction: row;
+  position: fixed;
+  height: 60px;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+}
+
+.title {
+  font-family: Roboto, Arial;
+  font-size: 20px;
+  margin-top: 20px;
+  margin-left: 5px;
+}
+
+.check {
+  height: 20px;
+  margin-top: 20px;
+  margin-left: 20px;
+}

@@ -1,0 +1,21 @@
+.app-container {
+  background-color: rgb(244, 123, 121);
+  color: white;
+  font-family: Roboto, Arial;
+  flex-direction: row;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 60px;
+}
+
+.app-message {
+  font-family: Roboto, Arial;
+  text-align: center;
+}
+
+.app-timer {
+  font-family: Roboto, Arial;
+  text-align: center;
+}
