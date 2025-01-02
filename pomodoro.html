@@ -1,12 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Pomodoro App</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <title>Pomodoro</title>
     <link rel="stylesheet" href="./main.css"/>
     <link rel="stylesheet" href="./header.css"/>
+    <link rel="stylesheet" href="./general.css"/>
   </head>
 
   <body>
@@ -15,18 +13,29 @@
       <p class="title">Pomodoro</p>
     </div>
 
-    <div class="app-container">
-      <div class="app-message">Press Start to Begin</div>
-      
-      <div class="app-timer">
-        <div class="app-counter">
-          <p><span class="minutes">25</span>:<span class="seconds">00</span></p>
+    <div class="main-grid">
+      <div class="timer-grid">
+        <div class="buttons-grid">
+          <button class="pomodoro-button">Pomodoro</button>
+          <button class="short-break-button">Short Break</button>
+          <button class="long-break-button">Long Break</button>
         </div>
-        <button class="start-button">Start</button>
-        
+        <div class="timer">
+          25:00
+        </div>
+        <button class="start-pause-button">START</button>
       </div>
-
+      <div class="description">
+        <p style="text-align: center;">#1</p>
+        <p>Time to focus!</p>
+      </div>
+      <div class="task-bar-grid">
+        Tasks
+        <button>Delete All</button>
+      </div>
+      
     </div>
+
   </body>
   <script src="./app.js"></script>
 </html>
