@@ -4,8 +4,8 @@ let session = Number.parseInt(document.querySelector('.js-minutes').innerHTML, 1
 let state = 'stopped'; // options: 'stopped', 'paused', 'running'
 let myInterval;
 let totalSec = session * 60;
-let count = [1, 1, 1];
-let currCountIdx = 0;
+let count = [1, 1, 1]; // idx 0: number of Pomodoros, idx 1: number of Short Breaks, idx 2: number of Long Breaks
+let currCountIdx = 0; // default index: 0 (Pomodoro)
 
 const timer = () => {
   const secondsElement = document.querySelector('.js-seconds');

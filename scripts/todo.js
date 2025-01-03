@@ -6,6 +6,7 @@ renderTodoList();
 function renderTodoList() {
   let todoListHTML = '';
 
+  // Iterate through each task in todo list
   for (let i = 0; i < todoList.length; i++) {
     const todoItem = todoList[i];
     const html = `
@@ -26,7 +27,6 @@ function addTodo() {
   const todo = inputElement.value;
 
   todoList.push(todo);
-
   inputElement.value = ''; // Makes textbox empty
 
   renderTodoList();
