@@ -4,14 +4,17 @@ body {
 
 .peach-bg {
   background-color: rgb(218, 163, 143);
+  transition: background-color 0.5s;
 }
 
 .brown-bg {
   background-color: rgb(155, 125, 97);
+  transition: background-color 0.5s;
 }
 
 .green-bg {
   background-color: rgb(146, 173, 164);
+  transition: background-color 0.5s;
 }
 
 p {
@@ -22,7 +25,7 @@ p {
 .main-grid {
   margin-top: 30px;
   display: grid;
-  grid-template-rows: 300px 110px 50px 75px;
+  grid-template-rows: 300px 110px 50px 75px 1000px;
   justify-items: center;
 }
 

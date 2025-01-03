@@ -41,24 +41,36 @@
       </div>
 
       <div class="description">
-        <p style="text-align: center;">#1</p>
+        <p style="text-align: center;"
+          class="js-count">
+        #1</p>
         <p class="js-focus">Time to focus!</p>
       </div>
       <div class="task-bar-grid">
         <p class="tasks-label">Tasks</p>
         <div>
-          <button class="trash-button">
+          <button class="trash-button"
+            title="Delete all tasks"
+            onclick="deleteAllTasks();">
             <img src="icons/trash-icon.png" class="trash-icon">
           </button>
         </div>
       </div>
 
-      <button class="add-task-button">
-        <img src="icons/add-icon.png" class="add-icon">
-        <p class="add-text">Add Task</p>
-      </button>
+      <div class="todo-input-grid">
+        <input class="add-task js-add-task" 
+          placeholder="Enter task">
+        <button onclick="
+          addTodo();
+          " title="Add task"
+          class="add-todo-button">Add
+        </button>
+      </div>
+      <div class="js-todo-list todo-grid"></div>
     </div>
 
+
   </body>
-  <script src="./app.js"></script>
+  <script src="scripts/app.js"></script>
+  <script src="scripts/todo.js"></script>
 </html>

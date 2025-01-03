@@ -36,6 +36,7 @@
 .short-break-button:active,
 .long-break-button:active {
   background-color: rgba(217, 217, 217, 0.158);
+  transition: background-color 0.5s;
 }
 
 .short-break-button {
@@ -82,14 +83,17 @@
 
 .peach-text {
   color: rgb(218, 163, 143);
+  transition: color 0.5s;
 }
 
 .brown-text {
   color: rgb(155, 125, 97);
+  transition: color 0.5s;
 }
 
 .green-text {
   color: rgb(146, 173, 164);
+  transition: color 0.5s;
 }
 
 .description {
