@@ -2,38 +2,61 @@
 <html lang="en">
   <head>
     <title>Pomodoro</title>
-    <link rel="stylesheet" href="./main.css"/>
-    <link rel="stylesheet" href="./header.css"/>
-    <link rel="stylesheet" href="./general.css"/>
+    <link rel="stylesheet" href="styles/main.css"/>
+    <link rel="stylesheet" href="styles/task.css"/>
+    <link rel="stylesheet" href="styles/timer.css"/>
   </head>
 
   <body>
-    <div class="header">
-      <img class="check" src="icons/icon-white2.png">
-      <p class="title">Pomodoro</p>
-    </div>
+    <p class="title">
+      <span><img class="check" src="icons/check-icon.png"></span>Pomodoro
+    </p>
 
     <div class="main-grid">
+
       <div class="timer-grid">
         <div class="buttons-grid">
-          <button class="pomodoro-button">Pomodoro</button>
-          <button class="short-break-button">Short Break</button>
-          <button class="long-break-button">Long Break</button>
+          <button class="pomodoro-button"
+            data-text-color="peach-text"
+            data-bg-color="peach-bg"
+            onclick="changeSession('pomodoro');"
+          >Pomodoro</button>
+          <button class="short-break-button"
+            data-text-color="brown-text"
+            data-bg-color="brown-bg"
+            onclick="changeSession('short');"
+          >Short Break</button>
+          <button class="long-break-button"
+            data-text-color="green-text"
+            data-bg-color="green-bg"
+            onclick="changeSession('long');"
+          >Long Break</button>
         </div>
         <div class="timer">
-          25:00
+          <p class="timer-text"><span class="minutes js-minutes">25</span>:<span class="seconds js-seconds">00</span></p>
         </div>
-        <button class="start-pause-button">START</button>
+        <button class="start-button js-start-button"
+          id="start-button-text"
+        >START</button>
       </div>
+
       <div class="description">
         <p style="text-align: center;">#1</p>
-        <p>Time to focus!</p>
+        <p class="js-focus">Time to focus!</p>
       </div>
       <div class="task-bar-grid">
-        Tasks
-        <button>Delete All</button>
+        <p class="tasks-label">Tasks</p>
+        <div>
+          <button class="trash-button">
+            <img src="icons/trash-icon.png" class="trash-icon">
+          </button>
+        </div>
       </div>
-      
+
+      <button class="add-task-button">
+        <img src="icons/add-icon.png" class="add-icon">
+        <p class="add-text">Add Task</p>
+      </button>
     </div>
 
   </body>

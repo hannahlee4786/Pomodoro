@@ -1,0 +1,40 @@
+body {
+  background-color: rgb(218, 163, 143);
+}
+
+.peach-bg {
+  background-color: rgb(218, 163, 143);
+}
+
+.brown-bg {
+  background-color: rgb(155, 125, 97);
+}
+
+.green-bg {
+  background-color: rgb(146, 173, 164);
+}
+
+p {
+  color: white;
+  font-family: Arial;
+}
+
+.main-grid {
+  margin-top: 30px;
+  display: grid;
+  grid-template-rows: 300px 110px 50px 75px;
+  justify-items: center;
+}
+
+.title {
+  font-family: Arial;
+  font-size: 20px;
+  margin-top: 8px;
+  margin-left: 5px;
+}
+
+.check {
+  height: 16px;
+  margin-right: 4px;
+  margin-top: 8px;
+}

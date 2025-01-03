@@ -1,12 +1,5 @@
-.main-grid {
-  margin-top: 100px;
-  display: grid;
-  grid-template-rows: 300px 110px 50px;
-  justify-items: center;
-}
-
 .timer-grid {
-  background-color: rgb(247, 137, 135);
+  background-color: transparent;
   display: grid;
   width: 501px;
   grid-template-rows: 60px 140px 100px;
@@ -15,7 +8,6 @@
 }
 
 .buttons-grid {
-  background-color: rgb(247, 137, 135);
   display: grid;
   grid-template-columns: 167px 167px 167px;
   border-radius: 10px;
@@ -24,7 +16,7 @@
 .pomodoro-button,
 .short-break-button,
 .long-break-button {
-  background-color: rgb(247, 137, 135);
+  background-color: transparent;
   color: white;
   font-family: Arial;
   font-size: 16px;
@@ -40,6 +32,12 @@
   margin-left: 20px;
 }
 
+.pomodoro-button:active,
+.short-break-button:active,
+.long-break-button:active {
+  background-color: rgba(217, 217, 217, 0.158);
+}
+
 .short-break-button {
   width: 147px;
   margin-left: 10px;
@@ -50,19 +48,28 @@
 }
 
 .timer {
-  background-color: rgb(247, 137, 135);
+  background-color: transparent;
   color: white;
   font-family: Arial;
   font-size: 110px;
   font-weight: 300;
-  padding-top: 10px;
 }
 
-.start-pause-button {
+.timer-text {
+  margin-top: 10px;
+}
+
+.start-button {
+  color: rgb(218, 163, 143);
+}
+
+.peach-text,
+.brown-text,
+.green-text,
+.start-button {
   width: 170px;
   margin-top: 10px;
   margin-bottom: 30px;
-  color: rgb(246, 105, 102);
   background-color: white;
   font-family: Arial;
   font-size: 20px;
@@ -73,21 +80,18 @@
   cursor: pointer;
 }
 
+.peach-text {
+  color: rgb(218, 163, 143);
+}
+
+.brown-text {
+  color: rgb(155, 125, 97);
+}
+
+.green-text {
+  color: rgb(146, 173, 164);
+}
+
 .description {
   margin-top: 5px;
-}
-
-.task-bar-grid {
-  background-color: lightcoral;
-  color: white;
-  font-family: Arial;
-  width: 501px;
-}
-
-.trash-button {
-  height: 20px;
-  border: none;
-  border-radius: 2px;
-  cursor: pointer;
-  object-fit: contain;
 }

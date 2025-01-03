@@ -1,0 +1,53 @@
+.task-bar-grid {
+  background-color: transparent;
+  color: white;
+  font-family: Arial;
+  width: 501px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-radius: 4px;
+}
+
+.tasks-label {
+  margin-left: 20px;
+}
+
+.trash-button {
+  background-color: transparent;
+  height: 40px;
+  width: 40px;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+  margin-left: 200px;
+  margin-top: 5px;
+}
+
+.trash-icon {
+  max-width: 20px;
+}
+
+.add-task-button {
+  margin-top: 15px;
+  width: 501px;
+  background-color: transparent;
+  color: white;
+  font-family: Arial;
+  font-size: 16px;
+  border: dashed;
+  border-color: rgb(222, 222, 222);
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.add-icon {
+  width: 30px;
+}
+
+.add-text {
+  padding-left: 2px;
+}
