@@ -24,11 +24,9 @@ function renderTodoList() {
 // Function: adds a task to the todo list
 function addTodo() {
   const inputElement = document.querySelector('.js-add-task');
-  const todo = inputElement.value;
 
   todoList.push(todo);
   inputElement.value = ''; // Makes textbox empty
-
   renderTodoList();
 }
 

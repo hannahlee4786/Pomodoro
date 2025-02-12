@@ -25,7 +25,14 @@
   padding: 6px 6px;
   margin-top: 10px;
   margin-bottom: 10px;
-  cursor: pointer
+  cursor: pointer;
+  transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.pomodoro-button:hover,
+.short-break-button:hover,
+.long-break-button:hover {
+  background-color: rgb(255, 255, 255, 0.3);
 }
 
 .pomodoro-button {

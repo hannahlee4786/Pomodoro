@@ -54,19 +54,23 @@ function changeSession(timerType) {
     session = 25;
     currCountIdx = 0;
     document.querySelector('.js-focus').innerHTML = 'Time to focus!';
+    document.querySelector('.js-count').innerHTML = `#${count[currCountIdx]}`;
   } else if (timerType === 'short') {
     session = 5;
     currCountIdx = 1;
-    document.querySelector('.js-focus').innerHTML = 'Time for a break!';
+    document.querySelector('.js-focus').innerHTML = 'Time for a short break!';
+    document.querySelector('.js-count').innerHTML = `#${count[currCountIdx]}`;
   } else {
     session = 10;
     currCountIdx = 2;
-    document.querySelector('.js-focus').innerHTML = 'Time for a break!';
+    document.querySelector('.js-focus').innerHTML = 'Time for a long break!';
+    document.querySelector('.js-count').innerHTML = `#${count[currCountIdx]}`;
   }
   document.querySelector('.js-minutes').innerHTML = session;
   document.querySelector('.js-seconds').innerHTML = '00';
   state = 'stopped';
   totalSec = session * 60;
+  
   startButton.addEventListener('click', timer);
 }
 

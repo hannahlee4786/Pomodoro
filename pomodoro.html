@@ -8,68 +8,71 @@
   </head>
 
   <body>
-    <p class="title">
-      <span><img class="check" src="icons/check-icon.png"></span>Pomodoro
-    </p>
+    <div id="container">
 
-    <div class="main-grid">
-
-      <div class="timer-grid">
-        <div class="buttons-grid">
-          <button class="pomodoro-button"
-            data-text-color="peach-text"
-            data-bg-color="peach-bg"
-            onclick="changeSession('pomodoro');"
-          >Pomodoro</button>
-          <button class="short-break-button"
-            data-text-color="brown-text"
-            data-bg-color="brown-bg"
-            onclick="changeSession('short');"
-          >Short Break</button>
-          <button class="long-break-button"
-            data-text-color="green-text"
-            data-bg-color="green-bg"
-            onclick="changeSession('long');"
-          >Long Break</button>
-        </div>
-        <div class="timer">
-          <p class="timer-text"><span class="minutes js-minutes">25</span>:<span class="seconds js-seconds">00</span></p>
-        </div>
-        <button class="start-button js-start-button"
-          id="start-button-text"
-        >START</button>
+      <div id="header">
+        <p><span><img class="check" src="icons/check-icon.png"></span>Pomodoro</p>
       </div>
-
-      <div class="description">
-        <p style="text-align: center;"
-          class="js-count">
-        #1</p>
-        <p class="js-focus">Time to focus!</p>
-      </div>
-      <div class="task-bar-grid">
-        <p class="tasks-label">Tasks</p>
-        <div>
-          <button class="trash-button"
-            title="Delete all tasks"
-            onclick="deleteAllTasks();">
-            <img src="icons/trash-icon.png" class="trash-icon">
+      
+      <div id="content">
+        <div class="timer-grid">
+          <div class="buttons-grid">
+            <button class="pomodoro-button"
+              data-text-color="peach-text"
+              data-bg-color="peach-bg"
+              onclick="changeSession('pomodoro');"
+            >Pomodoro</button>
+            <button class="short-break-button"
+              data-text-color="brown-text"
+              data-bg-color="brown-bg"
+              onclick="changeSession('short');"
+            >Short Break</button>
+            <button class="long-break-button"
+              data-text-color="green-text"
+              data-bg-color="green-bg"
+              onclick="changeSession('long');"
+            >Long Break</button>
+          </div>
+          <div class="timer">
+            <p class="timer-text"><span class="minutes js-minutes">25</span>:<span class="seconds js-seconds">00</span></p>
+          </div>
+          <button class="start-button js-start-button"
+            id="start-button-text"
+          >START</button>
+        </div>
+  
+        <div class="description">
+          <p style="text-align: center;"
+            class="js-count">
+          #1</p>
+          <p class="js-focus">Time to focus!</p>
+        </div>
+        <div class="task-bar-grid">
+          <p class="tasks-label">Tasks</p>
+          <div>
+            <button class="trash-button"
+              title="Delete all tasks"
+              onclick="deleteAllTasks();">
+              <img src="icons/trash-icon.png" class="trash-icon">
+            </button>
+          </div>
+        </div>
+  
+        <div class="todo-input-grid">
+          <input class="add-task js-add-task" 
+            placeholder="Enter task">
+          <button onclick="
+            addTodo();
+            " title="Add task"
+            class="add-todo-button">Add
           </button>
         </div>
+        <div class="js-todo-list todo-grid"></div>
       </div>
-
-      <div class="todo-input-grid">
-        <input class="add-task js-add-task" 
-          placeholder="Enter task">
-        <button onclick="
-          addTodo();
-          " title="Add task"
-          class="add-todo-button">Add
-        </button>
-      </div>
-      <div class="js-todo-list todo-grid"></div>
+  
+  
     </div>
-
-
+    
   </body>
   <script src="scripts/app.js"></script>
   <script src="scripts/todo.js"></script>
